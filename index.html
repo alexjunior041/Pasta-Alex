@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site - Alex Junior</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="Group 1.png" alt="Cabecalho">
+    </header>
+    <section class="escola">
+        <div class="escola-div-conteudo">
+            <p class="escola-titulo" id="titulo" style="font-weight: bold; font-size: 2em;"></p>
+            <p class="escola-texto-um" id="texto-um"></p>
+        </div>
+        <img class="escola-imagem" src="Teacher-pana.png" alt="imagem que representa uma professora em sala de aula">
+    </section>
+    
+    <script>
+        const titulo = "Sobre o Premen";
+        const textoUm = "A Escola Premen foi fundada em 2010 e tem como objetivo ensinar Pensamento Computacional, através do ensino de Programação. A turma mais estudiosa e famosa é a Segunda Série H. Nós somos super unidos e a turma favorita por todos os professores e professoras que nos ajudam!";
+    
+        let iTitulo = 0;
+        let iUm = 0;
+    
+        const escreverTextoTitulo = () => {
+            if (iTitulo < titulo.length) {
+                document.getElementById("titulo").innerHTML += titulo[iTitulo];
+                iTitulo++;
+                setTimeout(escreverTextoTitulo, 50);
+            }
+        };
+    
+        const escreverTextoUm = () => {
+            if (iUm < textoUm.length) {
+                document.getElementById("texto-um").innerHTML += textoUm[iUm];
+                iUm++;
+                setTimeout(escreverTextoUm, 40);
+            }
+        };
+    
+        escreverTextoTitulo();
+        escreverTextoUm();
+    </script>
+
+    <section class="estudante">
+        <h2 class="estudante-titulo">Confira alguns de nossos estudantes</h2>
+        <div class="estudante-todos">
+        <span></span>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="Elber.png" alt="foto do Elber">
+            <h3 class="estudante-nome">Elber Adriano</h3>
+            <a href="https://github.com/marcelopaludetto"><img class="estudante-icone" src="github.png" alt="icone github"></a>
+            <a href="https://linkedin.com/marcelopaludetto"><img class="estudante-icone" src="linkedin.png" alt="icone linkedin"></a>
+            <a href="https://instagram.com/marcelopaludetto"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
+        </div>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="Said.png" alt="foto do Said">
+            <h3 class="estudante-nome">Said Adriano</h3>
+            <a href="https://github.com/GabrielaM-L"><img class="estudante-icone" src="github.png" alt="icone github"></a>
+            <a href="https://www.linkedin.com/in/gabriela-marcomini-de-lima/"><img class="estudante-icone" src="linkedin.png" alt="icone linkedin"></a>
+            <a href="https://www.instagram.com/gabriela_marcomini/"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
+        </div>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="Joice.png" alt="foto da Joice">
+            <h3 class="estudante-nome">Joice Aline</h3>
+            <a href="https://github.com/LizandraDuarte40"><img class="estudante-icone" src="github.png" alt="icone github"></a>
+            <a href="https://www.linkedin.com/in/lizandrarlm-duarte/"><img class="estudante-icone" src="linkedin.png" alt="icone linkedin"></a>
+            <a href="https://www.instagram.com/lizandrarlm"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
+        </div>
+        <span></span>
+        <span></span>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="Renan.png" alt="foto do Renan">
+            <h3 class="estudante-nome">Renan Alves</h3>
+            <a href="https://github.com/JoiceAlura"><img class="estudante-icone" src="github.png" alt="icone github"></a>
+            <a href="https://www.linkedin.com/in/joicebarbaresco/"><img class="estudante-icone" src="linkedin.png" alt="icone linkedin"></a>
+            <a href="https://www.instagram.com/joicebarbaresco/"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
+        </div>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="Alex.png" alt="foto do Alex">
+            <h3 class="estudante-nome">Alex Antônio</h3>
+            <a href="https://github.com/MagePSR"><img class="estudante-icone" src="github.png" alt="icone github"></a>
+            <a href="https://www.linkedin.com/in/mariageovanna"><img class="estudante-icone" src="linkedin.png" alt="icone linkedin"></a>
+            <a href="https://www.instagram.com/magpsr/"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
+        </div>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="Tatiane.png" alt="foto da Tatiane">
+            <h3 class="estudante-nome">Tatiane Aparecida</h3>
+            <img class="estudante-icone" src="github.png" alt="icone github">
+            <a href="https://www.linkedin.com/in/olhe/"><img class="estudante-icone" src="linkedin.png" alt="icone linkedin"></a>
+            <a href="https://github.com/olhe12"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
+        </div>
+        <span></span>
+        <span></span>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="Gabriel.png" alt="foto do Gabriel">
+            <h3 class="estudante-nome">Gabriel Barbosa</h3>
+            <a href="https://github.com/rafaelamunhoz12"><img class="estudante-icone" src="github.png" alt="icone github"></a>
+            <a href="http://linkedin.com/in/rafaela-felix-munhoz-oliveira-02160a10a"><img class="estudante-icone" src="linkedin.png" alt="icone linkedin"></a>
+            <a href="https://www.instagram.com/rafafmo/"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
+        </div>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="Sabrina.png" alt="foto da Sabrina">
+            <h3 class="estudante-nome">Sabrina Coutinho</h3>
+            <a href="https://github.com/Thaispianucci"><img class="estudante-icone" src="github.png" alt="icone github"></a>
+            <a href="https://www.linkedin.com/in/thais-pianucci-benedicto-54a9a416/"><img class="estudante-icone" src="linkedin.png" alt="icone linkedin"></a>
+            <a href="https://www.instagram.com/thaispianucci/"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
+        </div>
+        <div class="estudante-div">
+            <img class="estudante-imagem" src="Roseane.png" alt="foto da Roseane">
+            <h3 class="estudante-nome">Roseane Cristina</h3>
+            <a href="https://github.com/Thaispianucci"><img class="estudante-icone" src="github.png" alt="icone github"></a>
+            <a href="https://www.linkedin.com/in/thais-pianucci-benedicto-54a9a416/"><img class="estudante-icone" src="linkedin.png" alt="icone linkedin"></a>
+            <a href="https://www.instagram.com/thaispianucci/"><img class="estudante-icone" src="instagram.png" alt="icone instagram"></a>
+        </div>
+        <div id="back-to-top">
+            <a href="#">
+              <svg viewBox="0 0 24 24">
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14 12 8 6 14z"></path>
+              </svg>
+            </a>
+          </div>
+    </div>
+    </section>
+    <footer class="rodape">
+        <img class="rodape-imagem"src="Group 2.png" alt="Imagem Rodapé">
+    </footer>
+    <script>
+const studentSections = document.querySelectorAll('.estudante-div');
+
+const options = {
+  root: null,
+  threshold: 0.5, // Observe element when 50% visible
+};
+
+const observer = new IntersectionObserver(entries => {
+  const currentScrollPosition = window.scrollY;
+  const isScrollingUp = currentScrollPosition < lastScrollPosition;
+  lastScrollPosition = currentScrollPosition;
+
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !isScrollingUp) {
+      entry.target.classList.add('animate');
+    } else {
+      entry.target.classList.remove('animate');
+    }
+  });
+});
+
+studentSections.forEach(section => {
+  observer.observe(section);
+});
+
+let lastScrollPosition = 0;
+    </script>
+    <script>
+        const backToTop = document.getElementById('back-to-top');
+
+        window.addEventListener('scroll', () => {
+  const scrollBottom = document.documentElement.scrollHeight - window.innerHeight;
+  const distanceFromBottom = scrollBottom - window.scrollY;
+
+  if (distanceFromBottom < 100) {
+    backToTop.classList.add('show');
+  } else {
+    backToTop.classList.remove('show');
+  }
+});
+
+backToTop.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+    duration: 100000 // Tempo em milissegundos
+  });
+});
+    </script>
+</body>
+</html>
